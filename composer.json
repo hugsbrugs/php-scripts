@@ -1,0 +1,25 @@
+{
+    "name": "hugsbrugs/php-scripts",
+    "description": "PHP Scripts Utilities",
+    "authors": [
+        {
+            "name": "Hugo Maugey",
+            "email": "hugo@maugey.fr",
+            "homepage": "https://hugo.maugey.fr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "hugsbrugs/php-filesystem": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload":{
+    	"psr-4": {"Hug\\": "src/Hug/"}
+    },
+    "autoload-dev": {
+        "psr-4": { "Hug\\Tests\\": "tests/Hug/" }
+    }
+}
