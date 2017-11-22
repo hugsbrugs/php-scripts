@@ -2,6 +2,8 @@
 
 namespace Hug\Scripts;
 
+use Exception;
+
 use Hug\FileSystem\FileSystem as FileSystem;
 
 /**
@@ -54,10 +56,10 @@ class Scripts
             if(file_exists($tmp_pid_file))
             {
                 $pid = trim(file_get_contents($tmp_pid_file));
-
-                # Delete $tmp_pid_file (was just used to retrieve PIP)
-                unlink($tmp_pid_file);
             }
+
+            # Delete $tmp_pid_file (was just used to retrieve PIP)
+            unlink($tmp_pid_file);
 
             $result['status'] = 'success';
             $result['data'] = [
@@ -111,7 +113,14 @@ class Scripts
         $is_running = true;
 
         # posix_getpgid will return false when a process is not running
-        if(!posix_getpgid($pid))
+        if(is_integer((int)$pid))
+        {
+            if(!posix_getpgid((int)$pid))
+            {
+                $is_running = false;
+            }
+        }
+        else
         {
             $is_running = false;
         }
