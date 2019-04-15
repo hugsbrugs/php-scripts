@@ -90,6 +90,9 @@ class Scripts
         {
             if(Scripts::is_running($pid))
             {
+                if (!defined('SIGTERM')) {
+                    define('SIGTERM',9);
+                }
                 $killed = posix_kill($pid , SIGTERM);
                 // $killed = posix_kill($pid , SIGKILL);
             }
