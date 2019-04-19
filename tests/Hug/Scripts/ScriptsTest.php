@@ -27,7 +27,7 @@ final class ScriptsTest extends TestCase
         $cmd = 'ls -lsa';
         $log_file = __DIR__ . '/test.log';
         $test = Scripts::run($cmd, $log_file);
-        $this->assertInternalType('array', $test);
+        $this->assertIsArray($test);
         $this->assertEquals('success', $test['status']);
     }
 
@@ -65,7 +65,7 @@ final class ScriptsTest extends TestCase
         $res = Scripts::run($cmd, $log_file);
 
         $test = Scripts::get_pid_cpu_mem($res['data']['pid']);
-        $this->assertInternalType('array', $test);
+        $this->assertIsArray($test);
 
         $killed = Scripts::kill($res['data']['pid']);
         $this->assertTrue($killed);

@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":294:{a:2:{s:7:"defects";a:2:{s:23:"ScriptsTest::testCanRun";i:6;s:32:"ScriptsTest::testCanGetPidCpuMem";i:6;}s:5:"times";a:4:{s:23:"ScriptsTest::testCanRun";d:0.004;s:29:"ScriptsTest::testCanIsRunning";d:1.003;s:32:"ScriptsTest::testCanGetPidCpuMem";d:0.02;s:24:"ScriptsTest::testCanKill";d:0.003;}}}
