@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "hugsbrugs/php-filesystem": "dev-master"
+        "hugsbrugs/php-filesystem": "^0.1"
     },
     "autoload":{
     	"psr-4": {"Hug\\": "src/Hug/"}
