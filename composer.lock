@@ -4,21 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d41a3b320487ae63ea9a96037820036",
+    "content-hash": "df797e034787763ebdda6a5f097c9c4f",
     "packages": [
         {
             "name": "hugsbrugs/php-filesystem",
-            "version": "0.1",
+            "version": "0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hugsbrugs/php-filesystem.git",
-                "reference": "395c96c54a698329a560bf2279fad27cfdfbf1d4"
+                "reference": "b5d5d61399b4c2ca0030de4b9176d7708b982830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hugsbrugs/php-filesystem/zipball/395c96c54a698329a560bf2279fad27cfdfbf1d4",
-                "reference": "395c96c54a698329a560bf2279fad27cfdfbf1d4",
+                "url": "https://api.github.com/repos/hugsbrugs/php-filesystem/zipball/b5d5d61399b4c2ca0030de4b9176d7708b982830",
+                "reference": "b5d5d61399b4c2ca0030de4b9176d7708b982830",
                 "shasum": ""
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1",
+                "phpunit/phpunit": "^6.0",
+                "satooshi/php-coveralls": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -30,11 +35,13 @@
             "authors": [
                 {
                     "name": "Hugo Maugey",
-                    "email": "hugo@maugey.fr"
+                    "email": "hugo@maugey.fr",
+                    "homepage": "https://hugo.maugey.fr",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP File System Utilities",
-            "time": "2017-03-10T10:18:01+00:00"
+            "time": "2018-02-09T14:13:36+00:00"
         }
     ],
     "packages-dev": [],
