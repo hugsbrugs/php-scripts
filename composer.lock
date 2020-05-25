@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df797e034787763ebdda6a5f097c9c4f",
+    "content-hash": "5e408c943bd866c83ad535091e925914",
     "packages": [
         {
             "name": "hugsbrugs/php-filesystem",
-            "version": "0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hugsbrugs/php-filesystem.git",
-                "reference": "b5d5d61399b4c2ca0030de4b9176d7708b982830"
+                "reference": "6af5d17cad38653e22ce26c9827efb9a7fa58d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hugsbrugs/php-filesystem/zipball/b5d5d61399b4c2ca0030de4b9176d7708b982830",
-                "reference": "b5d5d61399b4c2ca0030de4b9176d7708b982830",
+                "url": "https://api.github.com/repos/hugsbrugs/php-filesystem/zipball/6af5d17cad38653e22ce26c9827efb9a7fa58d3c",
+                "reference": "6af5d17cad38653e22ce26c9827efb9a7fa58d3c",
                 "shasum": ""
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1",
-                "phpunit/phpunit": "^6.0",
-                "satooshi/php-coveralls": "dev-master"
+                "php-coveralls/php-coveralls": "^2.2.0",
+                "phpunit/phpunit": "^6.0"
             },
             "type": "library",
             "autoload": {
@@ -41,13 +41,15 @@
                 }
             ],
             "description": "PHP File System Utilities",
-            "time": "2018-02-09T14:13:36+00:00"
+            "time": "2020-05-25T06:42:59+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "hugsbrugs/php-filesystem": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
